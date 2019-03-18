@@ -11,7 +11,8 @@ The current list of features of the Pintereach app are:
 * Search for saved articles by keywords
 * Move Articles to Different Boards via Drag & Drop
 * Rename Reseearch Boards
-* Ability to Follow Other users' research boards
+* Ability to Follow Other users' research boards.
+* Get notifications when boards you are following are updated.  
 * Color Code Articles according to importance/relevance of content to the research
     * <strong style='color:red'>red</strong> = most imporant
     * <strong style='color:yellow'>yellow</strong> = moderate importance
