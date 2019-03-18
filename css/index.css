@@ -4,11 +4,9 @@ nav {
   flex-wrap: nowrap;
   width: 100%;
   border: 1px solid black;
-  position: fixed;
 }
 nav .logo {
   max-height: 100px;
-  overflow: hidden;
 }
 nav .logo img {
   height: 100px;
@@ -31,4 +29,15 @@ html {
 }
 .wrapper {
   width: 100%;
+  text-align: center;
+}
+.feature {
+  border: 1px solid black;
+  padding: 10px;
+}
+.topics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
 }
