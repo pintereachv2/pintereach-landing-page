@@ -4,6 +4,7 @@ nav {
   flex-wrap: nowrap;
   width: 100%;
   border: 1px solid black;
+  position: fixed;
 }
 nav .logo {
   max-height: 100px;
@@ -17,6 +18,16 @@ nav .nav-buttons {
   display: flex;
   border: 1px solid red;
   align-items: center;
+}
+nav .nav-buttons .sign-in {
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background: white;
+}
+html {
+  box-sizing: border-box;
 }
 .wrapper {
   width: 100%;
