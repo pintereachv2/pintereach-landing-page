@@ -36,6 +36,7 @@ button {
 }
 .feature {
   padding: 10px;
+  border: 1px solid black;
 }
 .img-topics {
   display: flex;
