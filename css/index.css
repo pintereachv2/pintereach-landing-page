@@ -14,7 +14,6 @@ nav .logo img {
 }
 nav .nav-buttons {
   display: flex;
-  border: 1px solid red;
   align-items: center;
 }
 nav .nav-buttons .sign-in {
@@ -32,7 +31,6 @@ html {
   text-align: center;
 }
 .feature {
-  border: 1px solid black;
   padding: 10px;
 }
 .topics {
