@@ -25,15 +25,19 @@ nav .nav-buttons .sign-in {
 }
 html {
   box-sizing: border-box;
+  font-family: fantasy;
 }
 .wrapper {
   width: 100%;
   text-align: center;
 }
+button {
+  font-family: fantasy;
+}
 .feature {
   padding: 10px;
 }
-.topics {
+.img-topics {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
