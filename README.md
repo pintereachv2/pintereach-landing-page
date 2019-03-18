@@ -11,9 +11,9 @@ The current list of features of the Pintereach app are:
 * Move Articles to Different Boards
 * Rename Reseearch Boards
 * Color Code Articles according to importance/relevance of content to the research
-    * <strong>red</strong> = most imporant
-    * <strong>yellow</strong> = moderate importance
-    * <strong>green </strong>= low importance
+    * <strong style='color:red'>red</strong> = most imporant
+    * <strong style='color:yellow'>yellow</strong> = moderate importance
+    * <strong style='color:green'>green </strong>= low importance
     * <strong>black </strong>= no importance (default)
     
     
