@@ -29,6 +29,9 @@ nav .nav-buttons .sign-in {
   font-size: 20px;
   background: white;
 }
+nav .nav-buttons #about {
+  border: none;
+}
 html {
   box-sizing: border-box;
   font-family: fantasy;
