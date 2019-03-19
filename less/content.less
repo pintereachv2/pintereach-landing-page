@@ -2,6 +2,7 @@
 
 .feature {
     padding: 10px;
+    margin: 2rem auto;
     border: 1px solid black;
     display: flex;
     flex-wrap: nowrap;
@@ -14,7 +15,12 @@
     }
     
     blockquote {
-        width: 50%;
+        
+        
+        cite {
+            text-align: left;
+        }
+        
     }
     
     #img-search {
@@ -101,6 +107,7 @@
 .stats {
     display: block;
     
+    
     .figures {
         display: flex;
         flex-wrap: wrap;
@@ -111,8 +118,13 @@
             max-width: 200px;
             
             
+            img {
+                max-height: 200px;
+                max-width: 200px;
+            }
+            
             figcaption {
-                
+                font-size: 1.6rem;
             }
         }
     }
