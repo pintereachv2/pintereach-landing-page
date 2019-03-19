@@ -38,6 +38,9 @@ img {
   height: 200px;
   width: 200px;
 }
+p {
+  word-wrap: break-word;
+}
 .feature {
   padding: 10px;
   border: 1px solid black;
@@ -48,7 +51,13 @@ img {
 .feature blockquote {
   width: 50%;
 }
-.visual {
+.anywhere {
+  display: block;
+}
+.collage {
+  display: block;
+}
+.visual-research {
   display: block;
 }
 .img-topics {
@@ -57,9 +66,6 @@ img {
   flex-wrap: wrap;
   padding: 10px;
 }
-.img-topics img {
-  width: auto;
-}
-.stats img {
-  width: auto;
+.stats figure {
+  width: 25%;
 }
