@@ -50,6 +50,7 @@ p {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
 }
 .feature blockquote {
   width: 50%;
@@ -67,7 +68,6 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px;
 }
 .stats {
   display: block;

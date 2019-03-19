@@ -17,10 +17,13 @@ The current list of features of the Pintereach app are:
     * <strong style='color:red'>red</strong> = most imporant
     * <strong style='color:yellow'>yellow</strong> = moderate importance
     * <strong style='color:green'>green </strong>= low importance
-    * <strong>black </strong>= no importance (default)
+    * <strong>black</strong>= no importance (default)
     
-    
-    
+References:
+    * https://www.midway.edu/student-life/student-resources/library/research-tools/top-100-research-paper-topics/
+    * 
+
+
 
 
 
