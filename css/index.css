@@ -55,6 +55,25 @@ p {
 .feature blockquote {
   width: 50%;
 }
+.feature #img-search {
+  width: auto;
+  height: auto;
+  margin: 20px;
+}
+.feature #img-search img {
+  width: 100%;
+}
+.feature .top-img {
+  margin: 20px;
+}
+.feature .image {
+  width: 800px;
+  margin: 20px;
+}
+.feature .image img {
+  width: 100%;
+  height: 100%;
+}
 .anywhere {
   display: block;
 }
@@ -73,8 +92,9 @@ p {
   max-width: 100px;
   max-height: 100px;
 }
-.img-topics #tech {
+.img-topics figure {
   margin: auto;
+  padding: 10px;
 }
 .stats {
   display: block;
