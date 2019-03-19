@@ -5,7 +5,10 @@ nav {
   flex-wrap: nowrap;
   width: 100%;
   height: 150px;
-  border: 1px solid black;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav .logo {
   max-height: 100px;
@@ -50,10 +53,13 @@ button {
 cite {
   font-size: 1.6rem;
 }
+.content {
+  margin-top: 15rem;
+  padding: 0 2rem;
+}
 .feature {
   padding: 10px;
   margin: 2rem auto;
-  border: 1px solid black;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -119,6 +125,7 @@ cite {
   display: block;
 }
 .policy #lambda {
+  margin-top: 5rem;
   width: auto;
   height: auto;
 }
