@@ -29,6 +29,16 @@ nav .nav-buttons .sign-in {
 html {
   box-sizing: border-box;
   font-family: fantasy;
+  font-size: 62.5%;
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
 }
 .wrapper {
   width: 100%;
@@ -48,6 +58,7 @@ img {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .feature article {
   margin: 20px;
@@ -60,10 +71,10 @@ img {
   height: auto;
   margin: 20px;
 }
-.feature .top-img {
-  margin: 20px;
-  width: 400px;
-  height: auto;
+.feature #top-img {
+  max-width: 40rem;
+  max-height: 50rem;
+  margin: 3rem;
 }
 .feature .image {
   width: 800px;
