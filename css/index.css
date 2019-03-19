@@ -53,6 +53,9 @@ button {
 cite {
   font-size: 1.6rem;
 }
+.dark {
+  background-color: #FBFBFB;
+}
 .content {
   margin-top: 15rem;
   padding: 0 2rem;
