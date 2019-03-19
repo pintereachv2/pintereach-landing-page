@@ -8,22 +8,24 @@
     justify-content: center;
     align-items: center;
     
+    article {
+        margin: 20px;
+    }
+    
     blockquote {
         width: 50%;
     }
     
     #img-search {
-        width: auto;
+        width: 400px;
         height: auto;
         margin: 20px;
-        
-        img {
-            width: 100%;
-        }
     }
     
     .top-img {
         margin: 20px;
+        width: 400px;
+        height: auto;
     }
     
     .image {
@@ -43,6 +45,12 @@
 
 .anywhere {
     display: block;
+    
+    img {
+        width: 600px;
+        height: auto;
+    }
+    
 }
 
 .collage {
@@ -65,31 +73,16 @@
     
     figure {
         margin: auto;
-        padding: 10px;
-            
+        padding: 10px;   
     }
-    
 }
 
-.stats {
-    display: block;
-    
-    .figures {
-        display: flex;
-    }
-    
-    
-    
+.add-remove {
     img {
-//        width: auto;
-    }
-    
-
-    
-    figure {
-        width: 25%;
-    }
-    
+        margin: 20px;
+        width: 300px;
+        height: auto;
+    } 
 }
 
 .policy {
@@ -100,6 +93,27 @@
         height: auto;
     }
     
+    
+}
+
+.stats {
+    display: block;
+    
+    .figures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        figure {
+            margin: 20px;
+            max-width: 200px;
+            
+            
+            figcaption {
+                
+            }
+        }
+    }
     
 }
     

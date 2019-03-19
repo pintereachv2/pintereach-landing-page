@@ -38,11 +38,8 @@ button {
   font-family: fantasy;
 }
 img {
-  height: 200px;
-  width: 200px;
-}
-p {
-  word-wrap: break-word;
+  max-height: 200px;
+  max-width: 200px;
 }
 .feature {
   padding: 10px;
@@ -52,19 +49,21 @@ p {
   justify-content: center;
   align-items: center;
 }
+.feature article {
+  margin: 20px;
+}
 .feature blockquote {
   width: 50%;
 }
 .feature #img-search {
-  width: auto;
+  width: 400px;
   height: auto;
   margin: 20px;
 }
-.feature #img-search img {
-  width: 100%;
-}
 .feature .top-img {
   margin: 20px;
+  width: 400px;
+  height: auto;
 }
 .feature .image {
   width: 800px;
@@ -76,6 +75,10 @@ p {
 }
 .anywhere {
   display: block;
+}
+.anywhere img {
+  width: 600px;
+  height: auto;
 }
 .collage {
   display: block;
@@ -96,14 +99,10 @@ p {
   margin: auto;
   padding: 10px;
 }
-.stats {
-  display: block;
-}
-.stats .figures {
-  display: flex;
-}
-.stats figure {
-  width: 25%;
+.add-remove img {
+  margin: 20px;
+  width: 300px;
+  height: auto;
 }
 .policy {
   display: block;
@@ -111,4 +110,16 @@ p {
 .policy #lambda {
   width: auto;
   height: auto;
+}
+.stats {
+  display: block;
+}
+.stats .figures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stats .figures figure {
+  margin: 20px;
+  max-width: 200px;
 }
