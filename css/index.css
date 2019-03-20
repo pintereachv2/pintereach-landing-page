@@ -21,6 +21,12 @@ nav .logo img {
   width: 100%;
   margin: -5rem 0;
 }
+nav #sign-up {
+  background: #718BE8;
+}
+nav #sign-up a {
+  color: white;
+}
 nav .nav-buttons {
   display: flex;
   align-items: center;
@@ -32,6 +38,9 @@ nav .nav-buttons .sign-in {
   font-size: 20px;
   cursor: pointer;
   border-radius: 10px;
+}
+nav .nav-buttons .sign-in:nth-child(2) {
+  border: 1px solid #718BE8;
 }
 nav .nav-buttons #about {
   border: none;
@@ -216,4 +225,6 @@ address h2 {
 address button {
   padding: 1rem 2rem;
   font-size: 2rem;
+  background: white;
+  border-radius: 1rem;
 }
