@@ -27,11 +27,8 @@ nav .nav-buttons .sign-in {
   margin: 10px;
   padding: 10px;
   font-size: 20px;
-  background: white;
   cursor: pointer;
-}
-nav .nav-buttons .sign-in:nth-child(2) {
-  border: 1px solid blue;
+  border-radius: 10px;
 }
 nav .nav-buttons #about {
   border: none;
