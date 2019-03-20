@@ -197,11 +197,21 @@ cite {
   height: 100%;
   border-radius: 10px;
 }
+.members .member .social-media {
+  width: 2.5rem;
+  height: auto;
+  margin: 0.5rem;
+}
 .members .member button {
   margin: 1rem;
 }
 address {
-  padding: 100px 0;
+  margin: 8rem 0 0 0;
+  padding: 15rem 0;
+  background: #718BE8;
+}
+address h2 {
+  color: white;
 }
 address button {
   padding: 1rem 2rem;
