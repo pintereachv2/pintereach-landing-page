@@ -168,3 +168,32 @@ cite {
   width: 100%;
   height: auto;
 }
+#about-top {
+  padding: 20rem;
+  margin: 20rem 0 0 0;
+  font-size: 100px;
+  background: #718BE8;
+}
+#about-top h2,
+#about-top p {
+  color: white;
+}
+.members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.members .member {
+  max-width: 20rem;
+}
+.members .member img {
+  width: 100%;
+  border-radius: 10px;
+}
+address {
+  padding: 100px 0;
+}
+address button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
