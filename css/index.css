@@ -239,6 +239,9 @@ footer small a {
   border-radius: 1rem;
   padding: 3rem;
 }
+.members .bio.clicked {
+  display: inline-block;
+}
 .members .member {
   margin: 4rem;
   max-width: 20rem;

@@ -30,36 +30,47 @@ console.log();
 
 
 const members = document.querySelectorAll('.member');
+const articles = document.querySelectorAll('.bio');
+
 
 members.forEach( member => {
     member.addEventListener('click', () => {
         let clicked = member;
+        
         let bioID = member.dataset.bio;
         console.log(bioID);
         
-//        let bioArticle = document.querySelector(`article[data-bio='${bioID}]'`);
-        
         let bioArticle = document.querySelector(`article[data-bio='${bioID}']`);
+        console.log(bioArticle);
         
-//        console.log(bioArticle);
-        
-        bioArticle.style.display = 'inline-block';
+        articles.forEach( article => {
+            if (article === bioArticle) {
+                article.classList.add('clicked');
+            } else {
+                article.classList.remove('clicked');
+            }
+        } );
+//        
+//        bioArticle.style.display = 'inline-block';
 //        
 //        let animation = new TimelineLite();
 //     
 //        animation .to(member, 1, {scale: 1.3})
 //            .from(bio, 1, {opacity: 0});
-        
             TweenMax.to(member, 1, {scale: 1.3});
             TweenMax.from(bioArticle, 1, {opacity: 0, delay:1});
         
         members.forEach( member => {
             if (member !== clicked) {
                 TweenMax.to(member, 1, {opacity: .2, scale: .5});
-                member.classList.remove('clicked');
+             member.classList.remove('clicked');
+//             bioArticle.classList.remove('clicked');
+                
             } else {
                 TweenMax.to(member, 1, {opacity: 1});
                 member.classList.add('clicked');
+//                bioArticle.style.display = 'inline-block';
+//                bioArticle.classList.add('clicked');
             }
         });
     });
