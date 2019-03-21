@@ -230,6 +230,9 @@ footer small a {
   flex-wrap: wrap;
   margin-bottom: 5rem;
 }
+.members .bio {
+  display: none;
+}
 .members .member {
   margin: 4rem;
   max-width: 20rem;

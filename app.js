@@ -23,28 +23,40 @@ formBtn.addEventListener('click', () => {
 //opacity to the remaining selfies
 //fade in a bio for that member
 
-//click on the selfie again
-//shrink it.
-//remove opacity from the remaining elements
+
 
 const members = document.querySelectorAll('.member');
-
 
 members.forEach( member => {
     member.addEventListener('click', () => {
         let clicked = member;
-        TweenMax.to(member, 1, {scale: 1.5, });
+        let bio = document.querySelector('.bio');
+        bio.style.display = 'inline-block';
+//        
+//        let animation = new TimelineLite();
+//     
+//        animation .to(member, 1, {scale: 1.3})
+//            .from(bio, 1, {opacity: 0});
+        
+            TweenMax.to(member, 1, {scale: 1.3});
+            TweenMax.from(bio, 1, {opacity: 0, delay:1});
         
         members.forEach( member => {
             if (member !== clicked) {
                 TweenMax.to(member, 1, {opacity: .2, scale: .5});
+                member.classList.remove('clicked');
             } else {
                 TweenMax.to(member, 1, {opacity: 1});
+                member.classList.add('clicked');
             }
         });
-        
     });
 });
+
+
+//click on a selfie
+//fade in the article box
+
                             
 //                            
 //    let clicked = member;
