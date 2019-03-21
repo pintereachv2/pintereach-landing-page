@@ -165,6 +165,12 @@ cite {
   width: 20rem;
   height: auto;
 }
+.policy p {
+  line-height: 2;
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+}
 .stats {
   display: block;
 }
@@ -190,6 +196,24 @@ cite {
   width: 100%;
   height: auto;
 }
+footer {
+  width: 75%;
+  margin: 0 auto;
+  background: #718BE8;
+  text-align: center;
+}
+footer small {
+  display: inline-block;
+  text-align: center;
+  height: 1rem;
+  color: white;
+  vertical-align: middle;
+  padding: 5rem;
+  font-size: 1.8rem;
+}
+footer small a {
+  color: crimson;
+}
 #about-top {
   padding: 10rem;
   margin: 15rem 0 0 0;
@@ -204,6 +228,7 @@ cite {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 .members .member {
   margin: 4rem;
@@ -254,6 +279,7 @@ form div {
 form div label {
   display: inline-block;
   font-size: 2rem;
+  color: white;
   text-align: right;
   margin-right: 2rem;
 }
