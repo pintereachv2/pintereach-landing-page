@@ -19,7 +19,7 @@ formBtn.addEventListener('click', () => {
 
 
 //click on a selfie.  
-//expand the selfie
+//scale the selfie
 //opacity to the remaining selfies
 //fade in a bio for that member
 
@@ -29,8 +29,35 @@ formBtn.addEventListener('click', () => {
 
 const members = document.querySelectorAll('.member');
 
-members.forEach(member => TweenMax.to('.member', 5, {opacity : '.2'}));
 
+members.forEach( member => {
+    member.addEventListener('click', () => {
+        let clicked = member;
+        TweenMax.to(member, 1, {scale: 1.5, });
+        
+        members.forEach( member => {
+            if (member !== clicked) {
+                TweenMax.to(member, 1, {opacity: .2, scale: .5});
+            }
+        });
+        
+    });
+});
+                            
+//                            
+//    let clicked = member;
+//    
+//    members.forEach( member => {
+//        if (member !== clicked) {
+//            TweenMax.to(member, 1, {opacity: .2});
+//        }
+//    }));
+
+
+
+
+//
+//members.forEach(member => TweenMax.to('.member', 3, {opacity : '.2', x:-300, rotation: 180, scaleY: 1}));
 
 //
 //members.forEach( member => 
