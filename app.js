@@ -23,6 +23,10 @@ formBtn.addEventListener('click', () => {
 //opacity to the remaining selfies
 //fade in a bio for that member
 
+console.log();
+
+
+
 
 
 const members = document.querySelectorAll('.member');
@@ -30,8 +34,16 @@ const members = document.querySelectorAll('.member');
 members.forEach( member => {
     member.addEventListener('click', () => {
         let clicked = member;
-        let bio = document.querySelector('.bio');
-        bio.style.display = 'inline-block';
+        let bioID = member.dataset.bio;
+        console.log(bioID);
+        
+//        let bioArticle = document.querySelector(`article[data-bio='${bioID}]'`);
+        
+        let bioArticle = document.querySelector(`article[data-bio='${bioID}']`);
+        
+//        console.log(bioArticle);
+        
+        bioArticle.style.display = 'inline-block';
 //        
 //        let animation = new TimelineLite();
 //     
@@ -39,7 +51,7 @@ members.forEach( member => {
 //            .from(bio, 1, {opacity: 0});
         
             TweenMax.to(member, 1, {scale: 1.3});
-            TweenMax.from(bio, 1, {opacity: 0, delay:1});
+            TweenMax.from(bioArticle, 1, {opacity: 0, delay:1});
         
         members.forEach( member => {
             if (member !== clicked) {

@@ -232,6 +232,12 @@ footer small a {
 }
 .members .bio {
   display: none;
+  font-size: 2rem;
+  width: 35rem;
+  height: auto;
+  border: 5px solid #718BE8;
+  border-radius: 1rem;
+  padding: 3rem;
 }
 .members .member {
   margin: 4rem;
