@@ -38,6 +38,8 @@ members.forEach( member => {
         members.forEach( member => {
             if (member !== clicked) {
                 TweenMax.to(member, 1, {opacity: .2, scale: .5});
+            } else {
+                TweenMax.to(member, 1, {opacity: 1});
             }
         });
         
