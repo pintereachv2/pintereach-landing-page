@@ -228,3 +228,31 @@ address button {
   background: white;
   border-radius: 1rem;
 }
+form {
+  margin: 0 auto;
+  width: 40rem;
+  padding: 1rem;
+  border: 3px solid #CCC;
+}
+form div {
+  margin-top: 1rem;
+}
+form div label {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 2rem;
+}
+form div input,
+form div textarea {
+  width: 28rem;
+  margin-left: 2rem;
+}
+form div #email {
+  margin-left: 3rem;
+}
+form div textarea {
+  vertical-align: middle;
+  height: 5rem;
+  margin-left: 0rem;
+}
