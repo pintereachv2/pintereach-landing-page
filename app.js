@@ -48,7 +48,7 @@ members.forEach( member => {
             }
         
             if (bioID === 'will') {
-                TweenMax.to(bioArticle, 1, {y: -400, x: 300});
+                TweenMax.to(bioArticle, 1, {y: -350, x: 300});
             }
         
             if (bioID === 'hargo') {

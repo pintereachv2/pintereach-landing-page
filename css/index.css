@@ -245,6 +245,7 @@ footer small a {
   border: 5px solid #718BE8;
   border-radius: 1rem;
   padding: 3rem;
+  background-image: url('../assets/white.jpg');
 }
 .members .bio.clicked {
   display: block;
