@@ -79,29 +79,30 @@ nav .nav-buttons .button {
     margin: 0px;
     border: 1px solid black;
     padding: 3rem;
+    background-color: #718BE8;
+  }
+  nav .nav-buttons .button a {
+    color: white;
   }
 }
-nav .nav-buttons .button:nth-child(2) {
-  border: 1px solid black;
-}
-nav .nav-buttons .button:nth-child(2):hover {
+nav .nav-buttons .button:hover {
   background: #C7EEFF;
 }
-nav .nav-buttons .about {
+nav .about {
   border: none;
 }
 @media (max-width: 500px) {
-  nav .nav-buttons .about {
+  nav .about {
     border: 1px solid black;
   }
+  nav .about a:hover {
+    color: #718BE8;
+  }
+  nav .about a:hover {
+    color: #718BE8;
+  }
 }
-nav .nav-buttons .about a:hover {
-  color: #718BE8;
-}
-nav .nav-buttons #in:hover {
-  background: #C7EEFF;
-}
-nav .nav-buttons #sign-up a:hover {
+nav .about #sign-up a:hover {
   color: #C7EEFF;
 }
 html {

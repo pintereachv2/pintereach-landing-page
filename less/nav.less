@@ -80,11 +80,13 @@ nav {
                 margin: 0px;
                 border: 1px solid black;
                 padding: 3rem;
+                background-color: @logo-blue;
+                
+                a {
+                    color: white;
+                }
             }
 
-            &:nth-child(2) {
-                border: 1px solid black;
-                
                 &:hover {
                     background: @baby-blue;
                 }
@@ -98,15 +100,16 @@ nav {
             
             @media(max-width: 500px) {
                 border: 1px solid black;
+                
+                a:hover {
+                color: @logo-blue;
             }
             
             a:hover {
                 color: @logo-blue;
+                
+                
             }
-        }
-        
-        #in:hover {
-            background: @baby-blue;
         }
         
         #sign-up {
