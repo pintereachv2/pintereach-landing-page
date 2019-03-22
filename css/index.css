@@ -291,6 +291,7 @@ footer {
   }
 }
 footer small {
+  margin-top: 4px;
   display: inline-block;
   text-align: center;
   height: 1rem;
