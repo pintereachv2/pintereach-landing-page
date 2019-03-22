@@ -63,15 +63,20 @@ members.forEach( member => {
             } else {
                 TweenMax.to(member, 1, {opacity: 1});
                 member.classList.add('clicked');
+                member.addEventListener('click', cb);
             }
         });
         
-        console.log(clicked);
-        clicked.addEventListener('click',() => {
-            clicked.classList.remove('clicked');
+        function cb(event) {
+            member.classList.remove('clicked');
             bioArticle.classList.remove('clicked');
             TweenMax.to(clicked, 1, {scale:1});
-        });
+            //remove event listener
+            member.removeEventListener('click',cb);
+        }
+        
+        console.log(clicked);
+        
         
     });
 });
