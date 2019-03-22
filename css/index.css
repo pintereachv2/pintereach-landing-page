@@ -211,7 +211,7 @@ footer small {
   height: 1rem;
   color: white;
   vertical-align: middle;
-  padding: 5rem;
+  padding-bottom: 1.5rem;
   font-size: 1.8rem;
 }
 footer small a {

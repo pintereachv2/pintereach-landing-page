@@ -1,21 +1,38 @@
-const connect = document.querySelector('address');
+/*click Lets Talk Button - CHECK
+-animate the fade-in of the form
+-fade out the Let's Talk Button
+*/
+
+const talkBtn = document.querySelector('address button');
 const form = document.querySelector('form');
-const buttons = document.getElementsByClassName('button');
-const formBtn = buttons[3];
 
-
-
-connect.children[1].addEventListener('click', () => {
-     connect.children[0].style.display = 'none';
-     connect.children[1].style.display = 'none';
-     form.style.display = 'block';
+talkBtn.addEventListener('click', () => {
+    form.style.display = 'inline-block';
+    TweenMax.from(form, 3, { opacity: 0 });
+    talkBtn.style.display = 'none';
 });
 
-formBtn.addEventListener('click', () => {
-    connect.children[0].style.display = 'block';
-    connect.children[1].style.display = 'block';
-    form.style.display = 'none';
-})
+
+//const connect = document.querySelector('address');
+//const form = document.querySelector('form');
+//const buttons = document.getElementsByClassName('button');
+//const formBtn = buttons[3];
+//console.log(connect);
+//console.log(form);
+//console.log(buttons);
+//console.log(formBtn);
+//
+//connect.children[1].addEventListener('click', () => {
+//     connect.children[0].style.display = 'none';
+//     connect.children[1].style.display = 'none';
+//     form.style.display = 'block';
+//});
+//
+//formBtn.addEventListener('click', () => {
+//    connect.children[0].style.display = 'block';
+//    connect.children[1].style.display = 'block';
+//    form.style.display = 'none';
+//})
 
 
 //click on a selfie.  
@@ -23,7 +40,6 @@ formBtn.addEventListener('click', () => {
 //opacity to the remaining selfies
 //fade in a bio for that member
 
-console.log();
 
 
 
