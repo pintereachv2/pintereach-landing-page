@@ -89,6 +89,38 @@ nav .nav-buttons .button {
 nav .nav-buttons .button:hover {
   background: #C7EEFF;
 }
+@media (max-width: 500px) {
+  nav .nav-buttons .button:hover {
+    background: #718BE8;
+  }
+}
+nav .nav-buttons .button#sign-up a:hover {
+  color: #C7EEFF;
+}
+@media (max-width: 500px) {
+  nav .nav-buttons .button#sign-up a:hover {
+    color: white;
+  }
+}
+nav .nav-buttons .button#sign-up:hover {
+  color: #C7EEFF;
+}
+nav .nav-buttons .button.about:hover {
+  background-color: white;
+}
+@media (max-width: 500px) {
+  nav .nav-buttons .button.about:hover {
+    background-color: #718BE8;
+  }
+}
+nav .nav-buttons .button.about a:hover {
+  color: #718BE8;
+}
+@media (max-width: 500px) {
+  nav .nav-buttons .button.about a:hover {
+    color: white;
+  }
+}
 nav .about {
   border: none;
 }
@@ -99,12 +131,6 @@ nav .about {
   nav .about a:hover {
     color: #718BE8;
   }
-  nav .about a:hover {
-    color: #718BE8;
-  }
-}
-nav .about #sign-up a:hover {
-  color: #C7EEFF;
 }
 html {
   box-sizing: border-box;
