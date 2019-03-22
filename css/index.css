@@ -40,18 +40,21 @@ nav .nav-buttons .button {
   border-radius: 10px;
 }
 nav .nav-buttons .button:nth-child(2) {
-  border: 1px solid #718BE8;
+  border: 1px solid black;
 }
-nav .nav-buttons #about {
+nav .nav-buttons .button:nth-child(2):hover {
+  background: #C7EEFF;
+}
+nav .nav-buttons .about {
   border: none;
 }
-nav .nav-buttons #about:hover {
-  color: #C7EEFF;
+nav .nav-buttons .about a:hover {
+  color: #718BE8;
 }
 nav .nav-buttons #in:hover {
   background: #C7EEFF;
 }
-nav .nav-buttons #sign-up:hover {
+nav .nav-buttons #sign-up a:hover {
   color: #C7EEFF;
 }
 html {

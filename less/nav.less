@@ -42,19 +42,31 @@ nav {
             font-size: 20px;
             cursor: pointer;
             border-radius: 10px;
-
+            
+            a {
+//                
+                &:hover {
+//                    color: @logo-blue;
+                }
+                
+            }
 
             &:nth-child(2) {
-                border: 1px solid @logo-blue;
+                border: 1px solid black;
+                
+                &:hover {
+                    background: @baby-blue;
+                }
+                
 
             }
         }
 
-        #about {
+        .about {
             border: none;
             
-            &:hover {
-                color: @baby-blue;
+            a:hover {
+                color: @logo-blue;
             }
         }
         
@@ -62,8 +74,12 @@ nav {
             background: @baby-blue;
         }
         
-        #sign-up:hover {
-            color: @baby-blue;
+        #sign-up {
+            
+            a:hover {
+                color: @baby-blue;
+            }
+            
         }
 
     }
