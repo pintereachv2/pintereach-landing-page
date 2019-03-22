@@ -291,7 +291,6 @@ footer {
   }
 }
 footer small {
-  margin-top: 4px;
   display: inline-block;
   text-align: center;
   height: 1rem;
@@ -312,6 +311,11 @@ footer small a {
 #about-top h2,
 #about-top p {
   color: white;
+}
+@media (max-width: 500px) {
+  #about-top p {
+    margin-top: 7rem;
+  }
 }
 .members {
   display: flex;
@@ -340,6 +344,11 @@ footer small a {
   margin: 4rem;
   max-width: 20rem;
   max-height: 20rem;
+}
+@media (max-width: 500px) {
+  .members .member {
+    margin-bottom: 10rem;
+  }
 }
 .members .member img {
   width: 100%;
@@ -379,6 +388,11 @@ form {
   padding: 1rem;
   border: 10px ridge;
 }
+@media (max-width: 500px) {
+  form {
+    width: 30rem;
+  }
+}
 form div {
   margin-top: 1rem;
 }
@@ -394,8 +408,19 @@ form div textarea {
   width: 28rem;
   margin-left: 2rem;
 }
+@media (max-width: 500px) {
+  form div input,
+  form div textarea {
+    margin-left: 0;
+  }
+}
 form div #email {
   margin-left: 3rem;
+}
+@media (max-width: 500px) {
+  form div #email {
+    margin-left: 0;
+  }
 }
 form div textarea {
   vertical-align: middle;

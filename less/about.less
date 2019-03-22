@@ -11,6 +11,12 @@
         color: white;
     }
     
+    @media(max-width: 500px) {
+        p {
+            margin-top: 7rem;
+        }
+    }
+    
 }
 
 .members {
@@ -43,6 +49,10 @@
         margin: 4rem;
         max-width: 20rem;
         max-height: 20rem;
+        
+        @media(max-width: 500px) {
+            margin-bottom: 10rem;
+        }
         
         img {
             width: 100%;
@@ -94,6 +104,10 @@ form {
     padding: 1rem;
     border: 10px ridge;
     
+    @media(max-width: 500px) {
+        width: 30rem;
+    }
+    
     div {
         margin-top: 1rem;
         
@@ -108,10 +122,19 @@ form {
         input, textarea {
             width: 28rem;
             margin-left: 2rem;
+            
+            @media(max-width: 500px) {
+                margin-left: 0;
+            }
+            
         }
         
         #email {
             margin-left: 3rem;
+            
+            @media(max-width:500px) {
+                margin-left: 0;
+            }
         }
         
         textarea {
