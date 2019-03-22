@@ -80,6 +80,7 @@ nav .nav-buttons .button {
     border: 1px solid black;
     padding: 3rem;
     background-color: #718BE8;
+    z-index: 10;
   }
   nav .nav-buttons .button a {
     color: white;
