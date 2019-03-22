@@ -12,10 +12,6 @@
     }
     
 }
-//
-//[data-bio = 'hargo'] {
-//    display: none;
-//}
 
 .members {
     display: flex;
@@ -23,19 +19,23 @@
     flex-wrap: wrap;
     margin-bottom: 5rem;
     
+    .clicked {
+        display: block;
+    }
+    
     .bio {
         display: none;
         font-size: 2rem;
         width: 35rem;
+        margin-top: 10rem;
         height: auto;
         border: 5px solid @logo-blue;
         border-radius: 1rem;
         padding: 3rem;
         
         &.clicked {
-            display: inline-block;
+            display: block;
         }
-        
     }
     
     .member {

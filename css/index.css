@@ -233,17 +233,21 @@ footer small a {
   flex-wrap: wrap;
   margin-bottom: 5rem;
 }
+.members .clicked {
+  display: block;
+}
 .members .bio {
   display: none;
   font-size: 2rem;
   width: 35rem;
+  margin-top: 10rem;
   height: auto;
   border: 5px solid #718BE8;
   border-radius: 1rem;
   padding: 3rem;
 }
 .members .bio.clicked {
-  display: inline-block;
+  display: block;
 }
 .members .member {
   margin: 4rem;
