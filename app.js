@@ -1,8 +1,3 @@
-/*click Lets Talk Button - CHECK
--animate the fade-in of the form
--fade out the Let's Talk Button
-*/
-
 const talkBtn = document.querySelector('address button');
 const form = document.querySelector('form');
 
@@ -12,18 +7,18 @@ talkBtn.addEventListener('click', () => {
     talkBtn.style.display = 'none';
 });
 
-//click on a selfie.  
-//scale the selfie
-//opacity to the remaining selfies
-//fade in a bio for that member
-
 const members = document.querySelectorAll('.member');
 const articles = document.querySelectorAll('.bio');
 
 
 members.forEach( member => {
-    member.addEventListener('click', () => {
+    member.addEventListener('click', (event) => {
+        
+        event.stopPropagation();
+        
         let clicked = member;
+        
+        
         
         let bioID = member.dataset.bio;
         let bioArticle = document.querySelector(`article[data-bio='${bioID}']`);
