@@ -113,6 +113,11 @@ html {
 p {
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  p {
+    font-size: 2.4rem;
+  }
+}
 h1 {
   font-size: 4rem;
 }
@@ -127,6 +132,11 @@ figcaption {
   font-size: 2rem;
   line-height: 1;
 }
+@media (max-width: 500px) {
+  figcaption {
+    font-size: 3rem;
+  }
+}
 .wrapper {
   width: 100%;
   text-align: center;
@@ -136,6 +146,11 @@ button {
 }
 cite {
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  cite {
+    font-size: 2rem;
+  }
 }
 .dark {
   background-color: #FBFBFB;
@@ -153,6 +168,11 @@ cite {
   align-items: center;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .feature {
+    flex-wrap: wrap;
+  }
+}
 .feature article {
   margin: 20px;
 }
@@ -168,6 +188,11 @@ cite {
   max-width: 40rem;
   max-height: 50rem;
   margin: 3rem;
+}
+@media (max-width: 500px) {
+  .feature #top-img {
+    margin-top: 140px;
+  }
 }
 .feature .image {
   width: 800px;
@@ -241,6 +266,12 @@ cite {
 .stats .figures figure figcaption {
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .stats .figures figure figcaption {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+}
 .collage img {
   max-width: 500px;
   max-height: 400px;
@@ -252,6 +283,11 @@ footer {
   margin: 0 auto;
   background: #718BE8;
   text-align: center;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
 }
 footer small {
   display: inline-block;
