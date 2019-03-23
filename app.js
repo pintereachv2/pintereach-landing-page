@@ -20,11 +20,13 @@ members.forEach( member => {
     member.addEventListener('click', event => {
         
         
-        event.stopPropagation(); //
-        
-//        let clicked = member;
+//        event.stopPropagation(); //
         let clicked = event.currentTarget;
 //      console.log(clicked === event.currentTarget); //true
+        
+        if (clicked.classList.contains('clicked')) {
+            clickOff();
+        }
         
         function clickOff () {
             console.log('clickOff is run');
@@ -36,12 +38,14 @@ members.forEach( member => {
             clickedMembers.forEach( clickedMem => clickedMem.classList.remove('.clicked'));
             
             clickedBios.forEach( clickedBio.classList.remove('.clicked'));
+            
+//             document.querySelectorAll('.member').forEach(member => TweenMax.to(member, 1, {scale:1, opacity: 1}));
+            
+//             window.removeEventListener('click', clickOff);
         }
         
         
-        if (clicked.classList.contains('clicked')) {
-            clickOff();
-        }
+        
         
         let bioID = member.dataset.bio;
         let bioArticle = document.querySelector(`article[data-bio='${bioID}']`);
@@ -71,7 +75,9 @@ members.forEach( member => {
         
             if (bioID === 'hargo') {
                 TweenMax.to(bioArticle, 1, {y: -400, x: -300});
-            }          
+            }
+        
+//        window.addEventListener('click', clickOff);
         
         members.forEach( member => {
             if (member !== clicked) {
