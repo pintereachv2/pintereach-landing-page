@@ -1,3 +1,8 @@
+/*click Lets Talk Button - CHECK
+-animate the fade-in of the form
+-fade out the Let's Talk Button
+*/
+
 const talkBtn = document.querySelector('address button');
 const form = document.querySelector('form');
 
@@ -12,13 +17,31 @@ const articles = document.querySelectorAll('.bio');
 
 
 members.forEach( member => {
-    member.addEventListener('click', (event) => {
-        
-        event.stopPropagation();
-        
-        let clicked = member;
+    member.addEventListener('click', event => {
         
         
+        event.stopPropagation(); //
+        
+//        let clicked = member;
+        let clicked = event.currentTarget;
+//      console.log(clicked === event.currentTarget); //true
+        
+        function clickOff () {
+            console.log('clickOff is run');
+           let clickedMembers = document.querySelectorAll('.member.clicked');
+           console.log(clickedMembers);
+           let clickedBios = document.querySelectorAll('.bio.clicked');
+            console.log(clickedBios);
+            
+            clickedMembers.forEach( clickedMem => clickedMem.classList.remove('.clicked'));
+            
+            clickedBios.forEach( clickedBio.classList.remove('.clicked'));
+        }
+        
+        
+        if (clicked.classList.contains('clicked')) {
+            clickOff();
+        }
         
         let bioID = member.dataset.bio;
         let bioArticle = document.querySelector(`article[data-bio='${bioID}']`);
