@@ -72,6 +72,7 @@ nav .nav-buttons .button {
   font-size: 20px;
   cursor: pointer;
   border-radius: 10px;
+  z-index: 10;
 }
 @media (max-width: 500px) {
   nav .nav-buttons .button {
@@ -89,6 +90,38 @@ nav .nav-buttons .button {
 nav .nav-buttons .button:hover {
   background: #C7EEFF;
 }
+@media (max-width: 500px) {
+  nav .nav-buttons .button:hover {
+    background: #718BE8;
+  }
+}
+nav .nav-buttons .button#sign-up a:hover {
+  color: #C7EEFF;
+}
+@media (max-width: 500px) {
+  nav .nav-buttons .button#sign-up a:hover {
+    color: white;
+  }
+}
+nav .nav-buttons .button#sign-up:hover {
+  color: #C7EEFF;
+}
+nav .nav-buttons .button.about:hover {
+  background-color: white;
+}
+@media (max-width: 500px) {
+  nav .nav-buttons .button.about:hover {
+    background-color: #718BE8;
+  }
+}
+nav .nav-buttons .button.about a:hover {
+  color: #718BE8;
+}
+@media (max-width: 500px) {
+  nav .nav-buttons .button.about a:hover {
+    color: white;
+  }
+}
 nav .about {
   border: none;
 }
@@ -99,12 +132,6 @@ nav .about {
   nav .about a:hover {
     color: #718BE8;
   }
-  nav .about a:hover {
-    color: #718BE8;
-  }
-}
-nav .about #sign-up a:hover {
-  color: #C7EEFF;
 }
 html {
   box-sizing: border-box;
@@ -291,7 +318,6 @@ footer {
   }
 }
 footer small {
-  margin-top: 4px;
   display: inline-block;
   text-align: center;
   height: 1rem;
@@ -313,6 +339,11 @@ footer small a {
 #about-top p {
   color: white;
 }
+@media (max-width: 500px) {
+  #about-top p {
+    margin-top: 7rem;
+  }
+}
 .members {
   display: flex;
   justify-content: center;
@@ -321,6 +352,11 @@ footer small a {
 }
 .members .clicked {
   display: block;
+}
+@media (max-width: 500px) {
+  .members article [data-bio='amir'] {
+    display: none;
+  }
 }
 .members .bio {
   display: none;
@@ -340,6 +376,11 @@ footer small a {
   margin: 4rem;
   max-width: 20rem;
   max-height: 20rem;
+}
+@media (max-width: 500px) {
+  .members .member {
+    margin-bottom: 10rem;
+  }
 }
 .members .member img {
   width: 100%;
@@ -379,6 +420,11 @@ form {
   padding: 1rem;
   border: 10px ridge;
 }
+@media (max-width: 500px) {
+  form {
+    width: 30rem;
+  }
+}
 form div {
   margin-top: 1rem;
 }
@@ -394,8 +440,19 @@ form div textarea {
   width: 28rem;
   margin-left: 2rem;
 }
+@media (max-width: 500px) {
+  form div input,
+  form div textarea {
+    margin-left: 0;
+  }
+}
 form div #email {
   margin-left: 3rem;
+}
+@media (max-width: 500px) {
+  form div #email {
+    margin-left: 0;
+  }
 }
 form div textarea {
   vertical-align: middle;

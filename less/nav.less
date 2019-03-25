@@ -74,6 +74,7 @@ nav {
             font-size: 20px;
             cursor: pointer;
             border-radius: 10px;
+            z-index: 10;
             
             @media(max-width: 500px) {
                 border-radius: 0;
@@ -90,9 +91,37 @@ nav {
 
                 &:hover {
                     background: @baby-blue;
+                    @media(max-width:500px) {
+                        background: @logo-blue;
+                    }
                 }
+            
+            
+            &#sign-up a:hover {
+                color: @baby-blue;
+                @media(max-width:500px) {
+                    color: white;
+                }
+            }
+            
+            &#sign-up:hover {
+                color: @baby-blue;
+            }
                 
-
+            &.about:hover {
+                background-color: white;
+                @media(max-width:500px) {
+                    background-color: @logo-blue;
+                }
+            }
+                
+            &.about a:hover {
+                color: @logo-blue;
+                @media(max-width:500px) {
+                    color: white;
+                }
+            }
+            
             }
         }
 
@@ -105,24 +134,6 @@ nav {
                 a:hover {
                 color: @logo-blue;
             }
-            
-            a:hover {
-                color: @logo-blue;
-                
-                
-            }
         }
-        
-        #sign-up {
-            
-            a:hover {
-                color: @baby-blue;
-            }
-            
-        }
-
     }
-    
-    
-    
 }

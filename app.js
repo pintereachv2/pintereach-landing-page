@@ -12,18 +12,40 @@ talkBtn.addEventListener('click', () => {
     talkBtn.style.display = 'none';
 });
 
-//click on a selfie.  
-//scale the selfie
-//opacity to the remaining selfies
-//fade in a bio for that member
-
 const members = document.querySelectorAll('.member');
 const articles = document.querySelectorAll('.bio');
 
 
 members.forEach( member => {
-    member.addEventListener('click', () => {
-        let clicked = member;
+    member.addEventListener('click', event => {
+        
+        
+//        event.stopPropagation(); //
+        let clicked = event.currentTarget;
+//      console.log(clicked === event.currentTarget); //true
+        
+        if (clicked.classList.contains('clicked')) {
+            clickOff();
+        }
+        
+        function clickOff () {
+            console.log('clickOff is run');
+           let clickedMembers = document.querySelectorAll('.member.clicked');
+           console.log(clickedMembers);
+           let clickedBios = document.querySelectorAll('.bio.clicked');
+            console.log(clickedBios);
+            
+            clickedMembers.forEach( clickedMem => clickedMem.classList.remove('.clicked'));
+            
+            clickedBios.forEach( clickedBio.classList.remove('.clicked'));
+            
+//             document.querySelectorAll('.member').forEach(member => TweenMax.to(member, 1, {scale:1, opacity: 1}));
+            
+//             window.removeEventListener('click', clickOff);
+        }
+        
+        
+        
         
         let bioID = member.dataset.bio;
         let bioArticle = document.querySelector(`article[data-bio='${bioID}']`);
@@ -40,20 +62,37 @@ members.forEach( member => {
             TweenMax.from(bioArticle, 2, {opacity: 0, delay:1});
         
             if (bioID === 'amir')  {
-                TweenMax.to(bioArticle, 1, {y: -400});
+                
+                if (window.innerWidth > 500) {
+                    TweenMax.to(bioArticle, 1, {y: -400});
+                } else {
+                    TweenMax.to(bioArticle, 1, {y: -1050});
+                }
             }
         
             if (bioID === 'cynthia') {
+                if (window.innerWidth > 500) {
                 TweenMax.to(bioArticle, 1, {y: -400});
+                }
             }
         
             if (bioID === 'will') {
+                if (window.innerWidth > 500) {
                 TweenMax.to(bioArticle, 1, {y: -350, x: 300});
+                } else {
+                    TweenMax.to(bioArticle, 1, {y: -700, x: 0});
+                }
             }
         
             if (bioID === 'hargo') {
-                TweenMax.to(bioArticle, 1, {y: -400, x: -300});
-            }          
+                if (window.innerWidth > 500) {
+                    TweenMax.to(bioArticle, 1, {y: -400, x: -300});
+                } else {
+                    TweenMax.to(bioArticle, 1, {y: -320});
+                }
+            }
+        
+//        window.addEventListener('click', clickOff);
         
         members.forEach( member => {
             if (member !== clicked) {
